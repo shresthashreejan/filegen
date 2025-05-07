@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
     }
     for(int i = 0; i < number; i++)
     {
-        fprintf(file, "Line number: %d\n", i + 1);
+        fprintf(file, "memmove(&buffer->text[(int)buffer->cursorPos.x - 1], &buffer->text[(int)buffer->cursorPos.x], buffer->length - buffer->cursorPos.x + 1);\n");
     }
 
     clock_t endTime = clock();
